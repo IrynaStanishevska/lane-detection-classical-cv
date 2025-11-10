@@ -3,11 +3,12 @@ Classical lane detection with Canny + Hough, evaluated on simple vs challenging 
 
 ## Project structure
 
-- `lane_detection.ipynb` — main notebook:
+- `lane_detection.ipynb` — main notebook  
   - data loading (Kaggle videos),
   - Canny baseline visualization,
   - running `LaneDetector` on simple & hard videos,
   - frame-level visualization.
+  - [Open in Colab](https://colab.research.google.com/drive/1Qlnsk7351wMEJGysBds6A8k4zFH4knQ2?usp=sharing)
 - `src/lane_detector.py` — implementation of the proposed lane detection pipeline.
 - `src/canny_baseline.py` — simple Canny-based baseline on video frames.
 - `requirements.txt` — project dependencies.
