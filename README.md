@@ -59,6 +59,23 @@ This visual comparison illustrates:
 - On the challenging video, detections are often unstable or incorrect,
   which demonstrates the limitations of classical CV methods in real-world conditions.
 
+## Heuristic evaluation
+
+Since we do not have ground-truth lane annotations, we use a simple consistency check:
+
+A frame is counted as **valid** if:
+- both lane lines are detected;
+- left line is on the left side, right line on the right;
+- lines lie in the lower (road) area of the frame.
+
+Results:
+- Simple daytime highway: **~71%** valid frames
+- Challenging night / urban: **~3%** valid frames
+
+This heuristic confirms the visual observation:
+classical CV pipeline works reasonably well in easy conditions,
+but becomes highly unstable in challenging environments.
+
 ## How to run
 
 1. Install dependencies:
