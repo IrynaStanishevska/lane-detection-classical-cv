@@ -16,7 +16,7 @@ Classical lane detection with Canny + Hough, evaluated on simple vs challenging 
 ## Baseline vs Proposed
 
 **Baseline (`src/canny_baseline.py`):**
-- Grayscale + Canny edges for each frame.
+- Grayscale + Canny edge detection on each frame.
 - Shows all edges; no robust lane separation.
 
 **Proposed method (`src/lane_detector.py`):**
