@@ -32,11 +32,15 @@ Classical lane detection with Canny + Hough, evaluated on simple vs challenging 
 
 Simple daytime highway:
 
-![Simple lane detection](figures/lane_simple_160.png)
+![Simple Canny baseline](figures/simple_canny_vs_orig.png)
 
 Challenging night / urban:
 
-![Hard lane detection](figures/lane_hard_200.png)
+![Hard Canny baseline](figures/hard_canny_vs_orig.png)
+
+The baseline shows many edges and noisy structures and does not provide a clear lane geometry.
+
+### Proposed method: LaneDetector
 
 Simple daytime highway (detected lane area is stable and meaningful):
 
@@ -45,7 +49,6 @@ Simple daytime highway (detected lane area is stable and meaningful):
 Challenging night / urban (unstable / failing in many frames):
 
 ![Hard lane detection](figures/lane_hard_grid.png)
-
 This visual comparison illustrates:
 
 - classical Canny-based baseline is not sufficient,
