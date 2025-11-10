@@ -1,5 +1,7 @@
-# lane-detection-classical-cv
-Classical lane detection with Canny + Hough, evaluated on simple vs challenging road conditions.
+# Lane Detection (Classical CV)
+
+Classical lane line detection using Canny + HoughLinesP with ROI and temporal smoothing,
+evaluated on simple daytime vs challenging night/urban road conditions.
 
 ## Project structure
 
