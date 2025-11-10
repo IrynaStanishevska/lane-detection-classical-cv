@@ -38,6 +38,20 @@ Challenging night / urban:
 
 ![Hard lane detection](figures/lane_hard_200.png)
 
+Simple daytime highway (detected lane area is stable and meaningful):
+
+![Simple lane detection](figures/lane_simple_grid.png)
+
+Challenging night / urban (unstable / failing in many frames):
+
+![Hard lane detection](figures/lane_hard_grid.png)
+
+This visual comparison illustrates:
+
+- classical Canny-based baseline is not sufficient,
+- the proposed pipeline works well in easy conditions,
+- both approaches struggle in complex real-world scenarios, which motivates more robust methods.
+
 - On the simple video, the proposed method produces clear and stable lane markings.
 - On the challenging video, detections are often unstable or incorrect,
   which demonstrates the limitations of classical CV methods in real-world conditions.
